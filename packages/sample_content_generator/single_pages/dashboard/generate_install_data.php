@@ -24,7 +24,7 @@
 <h3><?=t('Archive Files.')?></h3>
 <p><?=t('Generate a zip of all files in this site.')?></p>
 <form method="post" action="<?=$this->action('get_files')?>">
-<?=Loader::helper('concrete/interface')->submit(t('Go'),'','left')?>
+    <button type="submit" class="btn btn-default"><?=t('Go')?></button>
 </form>
 <div class="ccm-spacer"></div>
 <br/><br/>
@@ -32,7 +32,7 @@
 <h3><?=t('Generate content.xml from current website.')?></h3>
 <p><?=t('Once you generate this file you can include it in a custom starting point.')?></p>
 <form method="post" action="<?=$this->action('get_content_xml')?>">
-<?=Loader::helper('concrete/interface')->submit(t('Go'),'','left')?>
+    <button type="submit" class="btn btn-default"><?=t('Go')?></button>
 </form>
 <div class="ccm-spacer"></div>
 
