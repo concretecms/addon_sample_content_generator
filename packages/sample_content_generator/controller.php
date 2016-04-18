@@ -1,8 +1,12 @@
 <?php     
 
+namespace Concrete\Package\SampleContentGenerator;
+use Package;
+use SinglePage;
+
 defined('C5_EXECUTE') or die(_("Access Denied."));
 
-class SampleContentGeneratorPackage extends Package {
+class Controller extends Package {
 
 	protected $pkgHandle = 'sample_content_generator';
 	protected $appVersionRequired = '5.5.0';
@@ -18,7 +22,6 @@ class SampleContentGeneratorPackage extends Package {
 	
 	public function install() {
 		$pkg = parent::install();
-		Loader::model('single_page');
 		$p = SinglePage::add('/dashboard/generate_install_data',$pkg);
 	}
 
