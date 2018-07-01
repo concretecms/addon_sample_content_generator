@@ -1,4 +1,4 @@
-<?
+<?php
 
 namespace Concrete\Package\SampleContentGenerator\Controller\SinglePage\Dashboard;
 use \Concrete\Core\Page\Controller\PageController;
