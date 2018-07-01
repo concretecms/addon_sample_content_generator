@@ -1,7 +1,7 @@
 
 <?=Loader::helper('concrete/dashboard')->getDashboardPaneHeaderWrapper(t('Generate Installation Data'))?>
 
-<? if ($this->controller->getTask() == 'get_files') { ?>
+<?php if ($this->controller->getTask() == 'get_files') { ?>
 
 	<h3><?=t('Files')?></h3>
 	
@@ -11,7 +11,7 @@
 	<a class="btn" href="<?=$this->url('/dashboard/generate_install_data')?>"><?=t('Back')?></a>
 
 
-<? } else if ($this->controller->getTask() == 'get_content_xml' | $this->controller->getTask() == 'get_custom_content_xml') { ?>
+<?php } else if ($this->controller->getTask() == 'get_content_xml' | $this->controller->getTask() == 'get_custom_content_xml') { ?>
 
 <h3><?=t('Data')?></h3>
 
@@ -54,7 +54,7 @@
 
 <div class="ccm-spacer"></div>
 
-<? } ?>
+<?php } ?>
 
 <?=Loader::helper('concrete/dashboard')->getDashboardPaneFooterWrapper();?>
 
