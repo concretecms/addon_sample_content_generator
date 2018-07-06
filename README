@@ -1,0 +1,3 @@
+This package is very outdated. You should use the 5.6 or 5.7+ version of the Migration Tool to generate XML from your concrete5 site:
+
+https://github.com/concrete5/addon_migration_tool/
